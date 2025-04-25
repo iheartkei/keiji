@@ -2,14 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>I Love You</title>
+  <title> i love you kei</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body, html {
       margin: 0;
       padding: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: 'Quicksand', sans-serif;
       height: 100%;
-      background: linear-gradient(to bottom right, #8ecae6, #f28482);
+      background-image: url(''); /* You can add your own background image here */
+      background-color: #ffeef2;
+      background-size: cover;
+      background-position: center;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -21,26 +25,27 @@
       align-items: center;
       text-align: center;
       width: 100%;
+      padding: 30px;
     }
 
     .active {
       display: flex;
     }
 
-    .start-btn, .extra-btn {
-      background-color: #219ebc;
+    .start-btn {
+      background-color: #ff6b81;
       color: white;
       border: none;
       padding: 15px 30px;
-      border-radius: 10px;
+      border-radius: 12px;
       font-size: 18px;
       cursor: pointer;
       transition: 0.3s ease;
       margin-top: 20px;
     }
 
-    .start-btn:hover, .extra-btn:hover {
-      background-color: #ff4d6d;
+    .start-btn:hover {
+      background-color: #5f8efc;
     }
 
     .image-container {
@@ -53,13 +58,13 @@
     .image-container div {
       width: 200px;
       height: 200px;
-      background-color: #ffffff50;
+      background-color: #ffffff80;
       border: 2px dashed #fff;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 14px;
-      color: white;
+      color: #333;
     }
 
     .cats {
@@ -69,45 +74,57 @@
     .cats img {
       height: 100px;
       margin: 0 10px;
+      border-radius: 10px;
     }
 
     .message {
       margin-top: 30px;
-      font-size: 22px;
-      color: white;
-      background-color: rgba(255, 255, 255, 0.2);
-      padding: 20px;
-      border-radius: 12px;
+      font-size: 20px;
+      color: #444;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 25px;
+      border-radius: 15px;
       max-width: 400px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      color: #ff6b81;
+      font-size: 3em;
     }
   </style>
 </head>
 <body>
   <!-- Start Page -->
   <div class="page active" id="start-page">
-    <h1 style="color:white; font-size: 3em;">I love you</h1>
+    <h1>I love you</h1>
     <button class="start-btn" onclick="goToMain()">Click me</button>
   </div>
 
   <!-- Main Page -->
   <div class="page" id="main-page">
     <div class="image-container">
-      <div>[Add image here]</div>
-      <div>[Add image here]</div>
+      <a href="https://ibb.co/WN86K0k1"><img src="https://i.ibb.co/SDYPvctp/IMG-1097.png" alt="us" border="0"></a>
+      <a href="https://ibb.co/mF0KhXDM"><img src="https://i.ibb.co/wr7qpw0x/IMG-4307.png" alt="us" border="0"></a>
     </div>
 
     <div class="message">
-      To my beloved <strong>[Boyfriend's Name]</strong>, from <strong>[Your Name]</strong><br><br>
-      [Your sweet message goes here...]
+      Hi, hinahangaan kita<br><br>
+  Okay, halata namang hindi lang ’yan ang gusto kong sabihin. 
+  Gusto kong magpasalamat ng sobra-sobra sa pagdating mo sa buhay ko. 
+  Hindi ko alam kung anong gagawin ko kung wala ka — parang imposibleng isipin ang buhay na wala ka. 
+  Araw-araw ay mas gumaganda at palagi akong nasasabik na makausap ka.
+  Ikaw ang pinakamagandang lalaki sa buong mundo, 
+  at sobrang na-appreciate ko na pinagtitiyagaan mo ako at palagi kang nandiyan, 
+  sa pinakamahirap at pinakasimpleng bahagi ng buhay ko. Hindi pa rin ako makapaniwalang kasama ko ang isang taong kasing kamangha-mangha mo.
+  Deserve mo ang buong mundo, at mahal na mahal kita.
     </div>
 
     <div class="cats">
-      <img src="https://placekitten.com/100/100" alt="Cat 1">
-      <img src="https://placekitten.com/101/100" alt="Cat 2">
-      <img src="https://placekitten.com/102/100" alt="Cat 3">
+     <a href="https://ibb.co/VWphFF1N"><img src="https://i.ibb.co/993fxxDv/IMG-6112.jpg" alt="1" border="0"></a>
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/ymGnkLPP/IMG-6113.jpg" alt="2" border="0"></a>
+      <a href="https://ibb.co/x8B9HDsT"><img src="https://i.ibb.co/fGy6v2Sw/IMG-6115.jpg" alt="3" border="0"></a>
     </div>
-
-    <button class="extra-btn">Another Button?</button>
   </div>
 
   <script>
