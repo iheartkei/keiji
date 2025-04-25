@@ -10,8 +10,7 @@
       padding: 0;
       font-family: 'Quicksand', sans-serif;
       height: 100%;
-      background-size: cover;
-      background-position: center;
+      background-color: #cce6ff; /* baby blue */
       overflow: hidden;
     }
 
@@ -40,11 +39,16 @@
       color: white;
       border: none;
       padding: 15px 30px;
-      border-radius: 12px;
-      font-size: 18px;
+      border-radius: 50%;
+      font-size: 24px;
       cursor: pointer;
       transition: 0.3s ease;
       margin-top: 20px;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .start-btn:hover {
@@ -98,7 +102,7 @@
   <!-- Start Page -->
   <div class="page active" id="start-page">
     <h1>I love you</h1>
-    <button class="start-btn" onclick="goToMain()">Click me</button>
+    <button class="start-btn" onclick="goToMain()">♡</button>
   </div>
 
   <!-- Main Page -->
