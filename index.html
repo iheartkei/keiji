@@ -2,30 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title> i love you kei</title>
+  <title>i love you kei</title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body, html {
+    html, body {
       margin: 0;
       padding: 0;
       font-family: 'Quicksand', sans-serif;
       height: 100%;
-      background-image: url(''); /* You can add your own background image here */
-      background-color: #ffeef2;
       background-size: cover;
       background-position: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      overflow: hidden;
     }
 
     .page {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       display: none;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       text-align: center;
-      width: 100%;
       padding: 30px;
+      box-sizing: border-box;
+      background-color: rgba(255, 255, 255, 0.6);
     }
 
     .active {
@@ -53,18 +56,15 @@
       justify-content: center;
       gap: 30px;
       margin-top: 40px;
+      flex-wrap: wrap;
     }
 
-    .image-container div {
+    .image-container img {
       width: 200px;
       height: 200px;
-      background-color: #ffffff80;
-      border: 2px dashed #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      color: #333;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     .cats {
@@ -79,12 +79,12 @@
 
     .message {
       margin-top: 30px;
-      font-size: 20px;
+      font-size: 18px;
       color: #444;
-      background-color: rgba(255, 255, 255, 0.7);
+      background-color: rgba(255, 255, 255, 0.8);
       padding: 25px;
       border-radius: 15px;
-      max-width: 400px;
+      max-width: 600px;
       line-height: 1.6;
     }
 
@@ -104,29 +104,34 @@
   <!-- Main Page -->
   <div class="page" id="main-page">
     <div class="image-container">
-      <a href="https://ibb.co/WN86K0k1"><img src="https://i.ibb.co/SDYPvctp/IMG-1097.png" alt="us" border="0"></a>
-      <a href="https://ibb.co/mF0KhXDM"><img src="https://i.ibb.co/wr7qpw0x/IMG-4307.png" alt="us" border="0"></a>
+      <a href="https://ibb.co/WN86K0k1"><img src="https://i.ibb.co/SDYPvctp/IMG-1097.png" alt="us"></a>
+      <a href="https://ibb.co/mF0KhXDM"><img src="https://i.ibb.co/wr7qpw0x/IMG-4307.png" alt="us"></a>
     </div>
 
     <div class="message">
       Hi, hinahangaan kita<br><br>
-  Okay, halata namang hindi lang ’yan ang gusto kong sabihin. 
-  Gusto kong magpasalamat ng sobra-sobra sa pagdating mo sa buhay ko. 
-  Hindi ko alam kung anong gagawin ko kung wala ka — parang imposibleng isipin ang buhay na wala ka. 
-  Araw-araw ay mas gumaganda at palagi akong nasasabik na makausap ka.
-  Ikaw ang pinakamagandang lalaki sa buong mundo, 
-  at sobrang na-appreciate ko na pinagtitiyagaan mo ako at palagi kang nandiyan, 
-  sa pinakamahirap at pinakasimpleng bahagi ng buhay ko. Hindi pa rin ako makapaniwalang kasama ko ang isang taong kasing kamangha-mangha mo.
-  Deserve mo ang buong mundo, at mahal na mahal kita.
+      Okay, halata namang hindi lang ’yan ang gusto kong sabihin. 
+      Gusto kong magpasalamat ng sobra-sobra sa pagdating mo sa buhay ko. 
+      Hindi ko alam kung anong gagawin ko kung wala ka — parang imposibleng isipin ang buhay na wala ka. 
+      Araw-araw ay mas gumaganda at palagi akong nasasabik na makausap ka.
+      Ikaw ang pinakamagandang lalaki sa buong mundo, 
+      at sobrang na-appreciate ko na pinagtitiyagaan mo ako at palagi kang nandiyan, 
+      sa pinakamahirap at pinakasimpleng bahagi ng buhay ko. Hindi pa rin ako makapaniwalang kasama ko ang isang taong kasing kamangha-mangha mo.
+      Deserve mo ang buong mundo, at mahal na mahal kita.
     </div>
 
     <div class="cats">
-     <a href="https://ibb.co/VWphFF1N"><img src="https://i.ibb.co/993fxxDv/IMG-6112.jpg" alt="1" border="0"></a>
-      <a href="https://imgbb.com/"><img src="https://i.ibb.co/ymGnkLPP/IMG-6113.jpg" alt="2" border="0"></a>
-      <a href="https://ibb.co/x8B9HDsT"><img src="https://i.ibb.co/fGy6v2Sw/IMG-6115.jpg" alt="3" border="0"></a>
+      <a href="https://ibb.co/VWphFF1N"><img src="https://i.ibb.co/993fxxDv/IMG-6112.jpg" alt="1"></a>
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/ymGnkLPP/IMG-6113.jpg" alt="2"></a>
+      <a href="https://ibb.co/x8B9HDsT"><img src="https://i.ibb.co/fGy6v2Sw/IMG-6115.jpg" alt="3"></a>
     </div>
   </div>
 
-
+  <script>
+    function goToMain() {
+      document.getElementById('start-page').classList.remove('active');
+      document.getElementById('main-page').classList.add('active');
+    }
+  </script>
 </body>
 </html>
